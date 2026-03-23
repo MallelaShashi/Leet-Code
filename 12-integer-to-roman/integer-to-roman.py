@@ -3,9 +3,9 @@ class Solution:
         val = [1000,900,500,400,100,90,50,40,10,9,5,4,1]
         sym = ["M","CM","D","CD","C","XC","L","XL","X","IX","V","IV","I"]
         
-        res = ""
+        x = ""
         for i in range(len(val)):
-            res += (num // val[i]) * sym[i]
+            x += (num // val[i]) * sym[i]
             num %= val[i]
             
-        return res
+        return x
